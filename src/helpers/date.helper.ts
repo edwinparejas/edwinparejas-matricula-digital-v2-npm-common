@@ -3,14 +3,14 @@
  * @param {Date} date Date
  * @returns {number} Miliseconds (epoch format)
  */
-export const dateToEpoch = (date: Date): number => date.getTime();
+export const dateToEpoch = (date: Date): number => date.getTime()  ;;
 
 /**
  * Convert miliseconds (epoch format) to date
  * @param {number} miliseconds Miliseconds (epoch format)
  * @returns {Date} Date
  */
-export const epochToDate = (miliseconds: number): Date => {
+export const epochToDate = (miliseconds: number): Date =>   {
   // eslint-disable-next-line prefer-const
   let date = new Date(0);
   date.setMilliseconds(miliseconds);
