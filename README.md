@@ -1,0 +1,3 @@
+# README
+
+Funciones en común
