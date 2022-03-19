@@ -7,6 +7,9 @@ src/
 # ignore husky
 .husky/
 
+# ignore coverage
+.coverage/
+
 # ignore dev configurations
 .eslintrc.json
 .lintstagedrc.json

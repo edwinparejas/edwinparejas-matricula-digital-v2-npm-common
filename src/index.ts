@@ -1,1 +1,1 @@
-console.log(new Date());
+export * from './helpers/date.helper';
