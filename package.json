@@ -5,10 +5,11 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
-        "dev": "npx tsc -w",
-        "format": "npx prettier --write .",
-        "test": "npx jest",
-        "build": "npx tsc"
+        "dev": "tsc -w",
+        "format": "prettier --write src/**/*.{ts,tsx}",
+        "lint": "eslint --fix src/**/*.{ts,tsx}",
+        "test": "jest",
+        "build": "tsc"
     },
     "keywords": [
         "epm",
