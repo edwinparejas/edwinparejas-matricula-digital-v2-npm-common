@@ -1,0 +1,15 @@
+# standard ignores
+node_modules/
+
+# ignore src
+src/
+
+# ignore husky
+.husky/
+
+# ignore dev configurations
+.eslintrc.json
+.lintstagedrc.json
+.prettierrc
+jest.config.ts
+tsconfig.json

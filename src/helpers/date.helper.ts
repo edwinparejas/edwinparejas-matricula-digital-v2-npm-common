@@ -55,7 +55,7 @@ export const compare = (d1: Date | number, d2: Date | number, operator = 'e'): b
 /**
  * Convert date to string in short format (12/05/2020) and long format (12/05/2020 12:40:51 pm)
  * @param {Date|number} date Date to convert
- * @param {?(short|long)} type Operator type - 'short' by default
+ * @param {?('short'|'long')} type Operator type - 'short' by default
  * @returns {string} Date in string format
  */
 export const toString = (date: Date | number, type = 'short'): string => {
@@ -100,8 +100,7 @@ export const toString = (date: Date | number, type = 'short'): string => {
  */
 export const getAge = (birthDate: Date | number, today: Date | number = new Date()): number => {
   const ageDifMs =
-    (typeof today === 'number' ? today : dateToEpoch(today)) -
-    (typeof birthDate === 'number' ? birthDate : dateToEpoch(birthDate));
+    (typeof today === 'number' ? today : dateToEpoch(today)) - (typeof birthDate === 'number' ? birthDate : dateToEpoch(birthDate));
   const ageDate = new Date(ageDifMs);
 
   return Math.abs(ageDate.getUTCFullYear() - 1970);
