@@ -11,7 +11,7 @@
         "lint": "eslint --fix src/**/*.{ts,tsx}",
         "lint2": "eslint '*/**/*.ts' --quiet --fix",
         "test": "jest",
-        "build": "tsc"
+        "build": "npm run lint && npm run format && npm run test && tsc"
     },
     "keywords": [
         "epm",

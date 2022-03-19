@@ -8,7 +8,11 @@ src/
 .husky/
 
 # ignore coverage
-.coverage/
+coverage/
+dist/coverage/
+
+# ignore jest
+dist/jest*
 
 # ignore dev configurations
 .eslintrc.json
