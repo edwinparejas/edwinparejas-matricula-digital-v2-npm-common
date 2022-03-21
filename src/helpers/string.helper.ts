@@ -31,15 +31,15 @@ export default class String {
    * Concatenate parts of a full name
    * @param {string} name Name
    * @param {string} firstSurname First surname
-   * @param {string} secondSurname Second surname
+   * @param {?string} secondSurname Second surname
    * @returns {string} Full name
    */
-  static getFullName = (name: string, firstSurname: string, secondSurname: string): string => {
+  static getFullName = (name: string, firstSurname: string, secondSurname?: string): string => {
     if (!name) {
       throw new Error("El parámetro 'name' está vacío");
     }
 
-    if (firstSurname) {
+    if (!firstSurname) {
       throw new Error("El parámetro 'firstSurname' está vacío");
     }
 

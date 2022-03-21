@@ -1,4 +1,8 @@
-import File from './helpers/file.helper';
+// import File from './helpers/file.helper';
+
+import { File, String } from './index';
 
 const filename = 'src/helpers/file.helper.ts';
 console.log('RUTA2 => ', File.getPath(filename));
+
+console.log('FULLNAME => ', String.getFullName('A', 'B', 'C'));
