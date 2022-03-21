@@ -11,8 +11,8 @@
         "lint": "eslint --fix src/**/*.{ts,tsx}",
         "lint2": "eslint '*/**/*.ts' --quiet --fix",
         "test": "jest",
-        "build": "tsc --build --clean",
-        "build2": "tsc"
+        "build": "rimraf dist && tsc",
+        "publish": "npm run build && np"
     },
     "keywords": [
         "epm",
