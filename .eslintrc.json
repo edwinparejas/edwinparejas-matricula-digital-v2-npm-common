@@ -22,6 +22,7 @@
     "arrow-body-style": ["error", "as-needed"],
     "operator-linebreak": [2, "after", { "overrides": { "?": "ignore", ":": "ignore" } }],
     "max-len": ["error", { "code": 140, "ignoreComments": true, "ignoreUrls": true }],
+    "radix": ["error", "as-needed"],
     "import/extensions": [
       "error",
       "ignorePackages",

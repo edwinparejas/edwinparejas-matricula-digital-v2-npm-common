@@ -1,0 +1,4 @@
+import File from './helpers/file.helper';
+
+const filename = 'src/helpers/file.helper.ts';
+console.log('RUTA2 => ', File.getPath(filename));
