@@ -1,6 +1,6 @@
 {
     "name": "epm-npm-smd",
-    "version": "1.0.7",
+    "version": "1.0.9",
     "description": "Este paquete contiene funciones comunes",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -12,7 +12,9 @@
         "lint2": "eslint '*/**/*.ts' --quiet --fix",
         "test": "jest",
         "build": "rimraf dist && tsc",
-        "publish": "npm run build && np"
+        "prepublishOnly": "npm run build",
+        "postpublish": "rimraf dist",
+        "publish": "npm run prepublishOnly && np && npm postpublish"
     },
     "keywords": [
         "epm",
